@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    max-width: 100vw;
+    overflow-x: hidden; /* esconde o que sobresai*/
+    overflow-y: scroll;
+    color: #000;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 3%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background-color: #e82139;
+}
+
+.cabecalho{
+    height: 5em;
+    margin-bottom: 1em;
+    position: relative;
+    text-align: center;
+}
+
+.cabecalhoWrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3% 0;
+    z-index: 1000;
+    background-color: #00296b;
+    color: #fff;
+    will-change: top,transform;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+
+.cabecalhoTexto{
+    margin: 0.1em auto;
+    pad: 0 0.2em;
+}
+
+.cabecalhoDentro{
+    position: relative;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0.2em;
+    box-sizing: border-box;
+    display: block;
+}
+
+.cabecalho ul{
+    list-style: none;
+}
+
+.cabecalho a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cabecalho a:hover {
+    color: #000;
+    transition: 300ms;
+}
+
+#assistaVideo{
+    padding: 1%;
+    font-style: italic;
+    font-weight: bolder;
+    text-shadow: rgba(0, 0, 0, 0, 0.3);
+}
+
+#assistaVideo p{  
+   margin: 5px;     
+   font-size: 1em;
+}
+#assistaVideo #pVermelho{
+    font-size: 1.5em;
+    color: #e82139;
+}
+
+.video {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.video iframe, .video object, .video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+button{
+    background-color: #e82139;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: bolder;
+    line-height: 1;
+    padding: 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 1px 0 #921624;
+    border: none;
+    animation: animacaoBotao 1s 1s ease-in-out ;
+}
+/* quando clica com o mouse */
+button:focus{
+    box-shadow: none;
+}
+
+.btnOferta{
+    margin:20px;
+    animation: animacaoBotao 1s 1s ease-in-out ;
+}
+
+/* button */
+#acessoImediato{
+    margin: 0;
+}
+.acessoImediato {
+    background-color: #00296b;
+    color: #fff;
+    border: #00296b;
+    border-radius: 10px;
+    padding: 18px;
+    font-size: 0.8em;
+    margin: 18px 0;
+    box-shadow: 4px 4px 1px 0 #001a44;
+}
+
+@keyframes animacaoBotao{
+    10%{
+        transform: rotate(-30deg);
+    }
+    20%{
+        transform: rotate(30deg);
+    }
+    35%{
+        transform: rotate(-30deg);
+    }
+    55%{
+        transform: rotate(30deg);
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+}
+
+#banner{
+    width: 100%;
+}
+
+#imgDepoimento{
+    margin: 1em;
+    width: 25%;
+}
+
+/* PROVA SOCIAL - BRANCO */
+#first p{
+    color: #00296b;
+    font-weight: bolder;
+}
+
+#provaSocial{
+    grid-template-columns: 2;
+}
+.prova{
+    width: 25%;
+}
+
+/*SECOND PRETO  */
+#imgSaiba{
+    display: inline;
+    width: 50%;
+}
+
+#second{
+    background-color: #00296b;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+}
+
+#second p{
+    font-weight: bolder
+}
+
+.textSaiba{
+    padding: 0,70%;
+}
+.paragrafoUm{
+    margin: 5px;
+}
+.tituloFase{
+    color: #e82139;
+}
+.barra{
+    color: #e82139;
+}
+
+.info{
+    color: #00296b;
+}
+
+.intro{
+    color: #e82139;
+}
+
+.info img, .intro img{
+    width: 25%;
+}
+
+/* sete dias - preto */
+#seteDias{
+    background-color: #e82139; 
+}
+
+.seteDias{
+    max-width: 80vw;
+    padding-top: 30px;
+}
+
+/* faq */
+#faq{
+    background-color: #00296b;
+    color: #fff;
+    padding-bottom: 30px;
+}
+#h2faq{
+    margin: 0%;
+    font-size: 40px;
+}
+
+.arrow{
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px;
+   /*  solid: #d4d4d4; */
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+    text-decoration: none;
+}
+
+.arrow p{
+    font-family: "Montserrat", Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+@keyframes{
+    to{
+        visibility: hidden;
+    }
+}
+
+.active{
+    display: block !important;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.animation{
+    transition:300ms;
+}
+
+#tempo, #garantia, #acesso, #local p {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #00296b;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: oblique;
+}
+
+#local p {
+    margin: 20px;
+}
+.escondido{
+    margin: 20px;
+}
+
+/* apresentação */
+#apresentacao{
+    padding: 0%;
+    background-color:white;
+    color: black;   
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+}
+
+#apresentacao p{
+    font-weight: bolder;
+    text-align: left;     
+}
+
+.perfil{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    max-width: 95vw;
+}
+
+.treinadora{
+    border: 2px solid red;
+    position: relative;  
+    width: 450px;
+    max-width: 80vw;
+    height: 450px;
+    max-height: 80vw;
+}
+#treinadoraPerfil{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 450px;
+    max-width: 80vw;
+    height: 450px;
+    max-height: 80vw;
+}
+
+#fotoMelina{
+    width: 25%;
+}
+
+.descricaoProfissional{
+    flex-grow: 1;
+    max-width: 80vw;
+    width: 600px;
+    margin-left: 20px;
+    height: 100%;
+    
+}
+
+.descricaoProfissional * { /* todos os filhos */
+    margin-top: 32px;
+}
+
+#termos{
+    color: #fff;
+    background-color:#00296b;
+    padding: 20px;
+    width: 100%;   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#termos p{   
+    max-width: 85vw;
+    width: 1074px;
+    font-weight: 400;
+}
+
+#rodape {
+    text-align: center;
+    padding: 20px;
+}
+
+.icones {
+    margin: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+@media screen and (max-width:480px){
+    #banner, img{
+      width: 100%; 
+    }
+    .funciona{
+        max-width: 95%;
+        width: 100vw;
+        margin: 2px;
+    }
+
+   #imgDiva{
+    width: 100%;
+   }
+}
+
+video{
+    max-width: 100vw;
+}
